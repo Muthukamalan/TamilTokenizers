@@ -1,0 +1,10 @@
+{
+    "[dockerfile]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        }
+    },
+    "chat.disableAIFeatures": true,
+    "chat.agent.enabled": false,
+    "python.analysis.autoImportCompletions": true
+}
