@@ -2,7 +2,9 @@
 *.txt
 *.model
 *.vocab
-
+# Added model intentially
+!regex.model
+!regex.vocab
 # 
 __pycache__
 *.py[cod]
