@@ -21,5 +21,5 @@ os.makedirs("models/", exist_ok=True)
 
 
 tokenizer = RegexTokenizer()
-tokenizer.train(text, vocab_size=500, verbose=False)
+tokenizer.train(text, vocab_size=1000, verbose=True)
 tokenizer.save(os.path.join("models", "regex"))

@@ -75,7 +75,7 @@ class RegexTokenizer(Tokenizer):
             merges[pair] = idx
             vocab[idx] = vocab[pair[0]] + vocab[pair[1]]
 
-            if verbose:
+            if verbose and i%10==0:
                 print(
                     f"merge {i + 1}/{num_merges}: {pair} -> {idx} ({vocab[idx]}) had {stats[pair]} occurrences"
                 )
@@ -104,9 +104,6 @@ class RegexTokenizer(Tokenizer):
                 raise ValueError(f"invalid token id: {idx}")
         text_bytes = b"".join(part_bytes)
         return text_bytes.decode("utf-8", errors="replace")
-
-    def encode(self, text):
-        return super().encode(text)
 
     def encode_ordinary(self, text: str) -> list[int]:
         txt_chunks: list[str] = re.findall(self.compiled_pattern, text)
