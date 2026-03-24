@@ -14,4 +14,5 @@ COPY server.py ./
 
 COPY models ./models/
 EXPOSE 8000
-CMD ["uv", "run", "python","-m" "serve"]
+
+CMD ["uv", "run", "server.py"]
