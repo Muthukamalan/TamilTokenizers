@@ -28,7 +28,7 @@ build-image:
 	docker build -t tamil-tiktok:latest .
 
 serve:
-	python -m serve 
+	python -m server
 gradio:
 	python app.py
 	

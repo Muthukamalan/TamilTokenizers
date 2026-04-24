@@ -172,6 +172,8 @@ Run Gradio app:
 uv run python app.py
 ```
 
+![Gradio UI](./assets/Tokenizer%20Vis.png)
+
 ### Option B: Using pip
 
 ```bash
@@ -237,6 +239,7 @@ curl -X POST "http://localhost:8000/encode" \
   -H "Content-Type: application/json" \
   -d '{"text":"தமிழ் மொழி அழகு"}'
 ```
+![Endpoint](./assets/FastAPI%20Endpoint.png)
 
 ## Training Your Own Model
 If you want to retrain from fresh data:
